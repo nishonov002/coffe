@@ -1,0 +1,58 @@
+header {
+  .container {
+    background-color:white;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 33px;
+      a {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height, or 125% */
+
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+
+        color:  #83888F;
+        &:hover {
+          color: rgb(5, 5, 5);
+        }
+      }
+    }
+    .mobile {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+header{
+  .container{
+    width: 768px;
+    padding:0 40px;
+  }
+}
+}
+@media only screen and (max-width: 400px) {
+header{
+  .container{
+    width: 375px;
+    padding:0 24px;
+    ul{
+      display: none;
+    }
+    .mobile{
+      display: block;
+    }
+  }
+}
+}

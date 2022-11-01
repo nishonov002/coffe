@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(182, 183, 184);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header .container {
+  background-color: white;
+  margin: 0 auto;
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+header .container ul {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+header .container ul a {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+header .container ul a:hover {
+  color: rgb(5, 5, 5);
+}
+header .container .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  header .container {
+    width: 768px;
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .container {
+    width: 375px;
+    padding: 0 24px;
+  }
+  header .container ul {
+    display: none;
+  }
+  header .container .mobile {
+    display: block;
+  }
+}
+main .container {
+  background-color: #fff;
+  width: 1200px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+main .container .box-1 {
+  background-image: url(/imagine/Bitmap\ \(2\).svg);
+  padding: 110px 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+main .container .box-1 h1 {
+  width: 493px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* or 100% */
+  color: #fefcf7;
+}
+main .container .box-1 P {
+  width: 445px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+main .container .box-1 .btn {
+  display: block;
+  padding: 16px 31px;
+  background-color: #0e8784;
+  border-radius: 6px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  color: #fefcf7;
+}
+main .container .box-1 .btn:hover {
+  background-color: #66d2cf;
+}
+main .container .box-2 {
+  width: 1040px;
+  padding: 180px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .container .box-2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container .box-2 div .inform h2 {
+  width: 255px;
+  margin-top: 71px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  color: #333d4b;
+}
+main .container .box-2 div .inform p {
+  width: 255px;
+  margin-top: 24px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #333d4b;
+}
+main .container .box-3 {
+  position: relative;
+  background: #2c343e;
+  padding-top: 110px;
+  padding-bottom: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container .box-3 h3 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  color: #fefcf7;
+}
+main .container .box-3 p {
+  margin-top: 33px;
+  width: 540px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+main .container .box-3 .position {
+  position: absolute;
+  top: 358px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .container .box-3 .position .boxs {
+  padding: 72px 24px;
+  width: 300px;
+  height: 382px;
+  background: #0e8784;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .container .box-3 .position .boxs img {
+  max-height: 100%;
+}
+main .container .box-3 .position .boxs h4 {
+  margin-top: 56px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  color: #fefcf7;
+}
+main .container .box-3 .position .boxs p {
+  width: 255px;
+  margin-top: 24px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #fefcf7;
+}
+main .container .box-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+main .container .box-4 .last {
+  margin-top: 350px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #83888f;
+}
+main .container .box-4 .shakl {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+main .container .box-4 .shakl .aylana {
+  width: 31px;
+  border: 1px solid #66d2cf;
+  border-radius: 50%;
+  padding: 15px;
+}
+main .container .box-4 .shakl .chiziq {
+  width: 350px;
+  border: 1px solid red;
+}
+main .container .box-4 .page {
+  margin-top: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1040px;
+}
+main .container .box-4 .page div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+main .container .box-4 .page div h2 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* identical to box height, or 100% */
+  color: #fdd6ba;
+}
+main .container .box-4 .page div h3 {
+  width: 200px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+  color: #333d4b;
+}
+main .container .box-4 .page div p {
+  width: 255px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #333d4b;
+}
+main .container .box-4 .btn {
+  margin-top: 64px;
+  margin-bottom: 75px;
+  display: block;
+  padding: 16px 31px;
+  background: #0e8784;
+  border-radius: 6px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  color: #fefcf7;
+}
+main .container .box-4 .btn:hover {
+  background: #66d2cf;
+}
+
+@media only screen and (max-width: 800px) {
+  main .container {
+    width: 768px;
+    padding: 0 40px;
+  }
+  main .container .box-1 {
+    width: 689px;
+    padding: 100px 58px;
+  }
+  main .container .box-1 h1 {
+    width: 329px;
+    font-size: 48px;
+  }
+  main .container .box-1 p {
+    width: 329px;
+    font-size: 15px;
+  }
+  main .container .box-2 {
+    flex-direction: column;
+    align-items: center;
+    width: 689px;
+  }
+  main .container .box-2 .box {
+    flex-direction: row;
+  }
+  main .container .box-3 .position {
+    flex-direction: column;
+    gap: 24px;
+  }
+  main .container .box-3 .position .boxs {
+    width: 573px;
+    height: 180px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main .container .box-3 .position .boxs h4 {
+    margin: 0;
+  }
+  main .container .box-4 .last {
+    margin-top: 450px;
+  }
+  main .container .box-4 .shakl .chiziq {
+    width: 200px;
+  }
+  main .container .box-4 .page {
+    width: 689px;
+  }
+  main .container .box-4 .page div {
+    width: 223px;
+  }
+  main .container .box-4 .page div P {
+    width: 223px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main .container {
+    width: 375px;
+    padding: 0 24px;
+  }
+  main .container .box-1 {
+    width: 327px;
+    padding: 100px 24px;
+  }
+  main .container .box-1 h1 {
+    width: 279px;
+    font-size: 40px;
+  }
+  main .container .box-1 p {
+    width: 279px;
+    font-size: 15px;
+  }
+  main .container .box-2 {
+    flex-direction: column;
+    align-items: center;
+    width: 279px;
+  }
+  main .container .box-2 .box {
+    flex-direction: column;
+  }
+  main .container .box-3 .inform {
+    height: 902px;
+  }
+  main .container .box-3 .inform h3 {
+    width: 279px;
+    font-size: 28px;
+  }
+  main .container .box-3 .inform p {
+    width: 279px;
+  }
+  main .container .box-3 .position {
+    flex-direction: column;
+    gap: 24px;
+  }
+  main .container .box-3 .position .boxs {
+    width: 279px;
+    height: 382px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  main .container .box-3 .position .boxs h4 {
+    margin: 0;
+  }
+  main .container .box-4 {
+    align-items: center;
+  }
+  main .container .box-4 .last {
+    margin-top: 450px;
+    text-align: center;
+  }
+  main .container .box-4 .shakl {
+    display: none;
+  }
+  main .container .box-4 .shakl .chiziq {
+    width: 200px;
+  }
+  main .container .box-4 .page {
+    flex-direction: column;
+    width: 327px;
+    align-items: center;
+    text-align: center;
+  }
+  main .container .box-4 .page div {
+    align-items: center;
+    width: 223px;
+  }
+  main .container .box-4 .page div h2 {
+    text-align: center;
+  }
+  main .container .box-4 .page div P {
+    width: 223px;
+  }
+}
+footer .container {
+  background-color: white;
+  width: 1200px;
+  padding: 135px 80px;
+  margin: 0 auto;
+}
+footer .container .container-2 {
+  background-color: #2c343e;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+footer .container .container-2 .list {
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+footer .container .container-2 .list a {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+footer .container .container-2 .list a:hover {
+  color: white;
+}
+footer .container .container-2 .tarmoq {
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+footer .container .container-2 .tarmoq a:hover {
+  background: #fdd6ba;
+}
+
+@media only screen and (max-width: 800px) {
+  footer .container {
+    width: 768px;
+    padding: 72px 40px;
+  }
+  footer .container .container-2 {
+    height: 270px;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container .container-2 img {
+    margin-top: 54px;
+  }
+  footer .container .container-2 .list {
+    margin: 33px 0;
+  }
+  footer .container .container-2 .tarmoq {
+    margin: 10px 0;
+    height: 24px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer .container {
+    width: 375px;
+    padding: 72px 24px;
+  }
+  footer .container .container-2 {
+    height: 346px;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container .container-2 img {
+    margin-top: 54px;
+  }
+  footer .container .container-2 .list {
+    margin: 33px 0;
+    flex-direction: column;
+  }
+  footer .container .container-2 .tarmoq {
+    margin: 10px 0;
+    height: 24px;
+  }
+}/*# sourceMappingURL=main.css.map */
